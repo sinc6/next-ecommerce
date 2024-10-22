@@ -28,6 +28,7 @@ export const users = pgTable(
     image: text('image'),
     address: json('address').$type<ShippingAddress>(),
     paymentMethod: text('paymentMethod'),
+    createdAt: timestamp('createdAt').defaultNow(),
   },
   (table) => {
     return {
