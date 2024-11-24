@@ -1,4 +1,6 @@
-![](C:\Users\sinem\Desktop\next-ecommerce\public\assets\images\ss)
+
+<img src="https://github.com/sinc6/next-ecommerce/blob/master/public/assets/images/ss.PNG?raw=true" width="450" height="500">
+
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
