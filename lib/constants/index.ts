@@ -47,3 +47,9 @@ export const productDefaultValues = {
   numReviews: 0,
   isFeatured: false,
 }
+
+export const reviewFormDefaultValues = {
+  title: '',
+  comment: '',
+  rating: 0,
+}

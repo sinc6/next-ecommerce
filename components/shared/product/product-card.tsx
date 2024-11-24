@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Product } from '@/types'
 import ProductPrice from './product-price'
+import Rating from './rating'
 
 const ProductCard = ({ product }: { product: Product }) => {
   return (
@@ -28,7 +29,7 @@ const ProductCard = ({ product }: { product: Product }) => {
           </Link>
         </div>
         <div className="flex-between gap-4">
-          <p>{product.rating} stars</p>
+          <Rating value={Number(product.rating)} />
           {product.stock > 0 ? (
             <ProductPrice value={Number(product.price)} />
           ) : (

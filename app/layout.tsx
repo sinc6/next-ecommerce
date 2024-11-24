@@ -3,6 +3,7 @@ import { Poppins as FontSans } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import { Toaster } from '@/components/ui/toaster'
 import React from 'react'
+import { ThemeProvider } from '@/components/shared/theme-provider'
 import './globals.css'
 
 const fontSans = FontSans({
@@ -29,8 +30,15 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        {children}
-        <Toaster />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   )
